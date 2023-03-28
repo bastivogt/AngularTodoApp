@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li *ngFor="let todo of todos; let i = index">
+      [{{ i }}] <strong>{{ todo.title }}</strong> ({{ todo.priority }})
+      <button (click)="onDeleteTodo(i)">x</button>
+    </li>
+  </ul>
+</div>

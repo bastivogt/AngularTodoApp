@@ -1,0 +1,12 @@
+<h3>Todo hinzufügen</h3>
+<div>
+  <input type="text" [(ngModel)]="todo.title" />
+
+  <select [(ngModel)]="todo.priority">
+    <option>hoch</option>
+    <option>normal</option>
+    <option>niedrig</option>
+  </select>
+
+  <button (click)="onSubmitTodo()">Hinzufügen</button>
+</div>
